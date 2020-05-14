@@ -1,4 +1,5 @@
 forex-service.h2.console.enabled: true
 forex-service.datasource.url: jdbc:h2:mem:forexDB
 forex-service.username: sa
-forex-service.password: ''
+forex-service.password:
+

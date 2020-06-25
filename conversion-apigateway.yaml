@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: conversion-service
+        uri: lb://conversion-service
+        predicates:
+        - Path=/currency/fetchConversionFactor/**, /currency/fetchAllConvertionFactors, /currency/conversion, /currency/addConversionFactor, /currency/updateConversionFactor
